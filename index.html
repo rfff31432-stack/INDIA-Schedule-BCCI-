@@ -1,198 +1,237 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ICC World Test Championship 2025-2027</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India tour of Sri Lanka 2026 Schedule</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
 
-<style>
-body{
-margin:0;
-padding:20px;
-background:#f2f2f2;
-font-family:Arial,Helvetica,sans-serif;
-}
+    body {
+      background-color: #f2f4f5;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
 
-.container{
-max-width:900px;
-margin:auto;
-background:#fff;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
-}
+    .app-container {
+      width: 100%;
+      max-width: 420px;
+      background-color: #f2f4f5;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
 
-.header{
-background:#000;
-color:#fff;
-text-align:center;
-padding:20px;
-}
+    /* Top Navigation Bar */
+    .top-bar {
+      background-color: #008767;
+      color: white;
+      padding: 16px 16px 0 16px;
+    }
 
-.header h1{
-margin:0;
-font-size:38px;
-}
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
 
-.header h2{
-margin:5px 0 0;
-font-size:22px;
-color:#d4af37;
-}
+    .back-arrow {
+      font-size: 22px;
+      cursor: pointer;
+    }
 
-table{
-width:100%;
-border-collapse:collapse;
-}
+    /* Navigation Tabs */
+    .nav-tabs {
+      display: flex;
+      justify-content: space-between;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
 
-thead{
-background:#111;
-color:#fff;
-}
+    .tab {
+      padding: 10px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+      cursor: pointer;
+      position: relative;
+    }
 
-th,td{
-padding:18px;
-text-align:center;
-font-size:22px;
-border-bottom:1px solid #ddd;
-}
+    .tab.active {
+      color: #ffffff;
+    }
 
-tbody tr:hover{
-background:#f7f7f7;
-}
+    .tab.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: #ffffff;
+      border-radius: 3px 3px 0 0;
+    }
 
-.team{
-font-weight:bold;
-color:#002366;
-}
+    /* Content Schedule Section */
+    .schedule-content {
+      padding-bottom: 20px;
+    }
 
-.points{
-padding:20px;
-background:#fafafa;
-font-size:22px;
-line-height:1.8;
-}
+    .date-header {
+      font-size: 13px;
+      font-weight: 700;
+      color: #333333;
+      padding: 14px 16px 8px 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
 
-.points h3{
-margin-top:0;
-color:#000080;
-font-size:28px;
-}
-</style>
+    /* Match Card */
+    .match-card {
+      background-color: #ffffff;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      position: relative;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .match-info {
+      font-size: 13px;
+      color: #757575;
+      font-weight: 400;
+    }
+
+    .bell-icon {
+      color: #9e9e9e;
+      cursor: pointer;
+    }
+
+    /* Team Rows */
+    .team-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .flag {
+      width: 24px;
+      height: 16px;
+      object-fit: cover;
+      border-radius: 2px;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .team-name {
+      font-size: 15px;
+      font-weight: 500;
+      color: #212121;
+    }
+
+    /* Match Time */
+    .match-time {
+      font-size: 13px;
+      color: #d97706;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="container">
+  <div class="app-container">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="header-title">
+        <span class="back-arrow">&#8592;</span>
+        <span>India tour of Sri Lanka 2026</span>
+      </div>
+      
+      <!-- Nav Tabs -->
+      <div class="nav-tabs">
+        <div class="tab active">MATCHES</div>
+        <div class="tab">TABLE</div>
+        <div class="tab">STATS</div>
+        <div class="tab">SQUADS</div>
+        <div class="tab">NEWS</div>
+      </div>
+    </div>
 
-<div class="header">
-<h1>ICC WORLD TEST CHAMPIONSHIP</h1>
-<h2>2025–2027</h2>
-</div>
+    <!-- Match Schedule List -->
+    <div class="schedule-content">
 
-<table>
+      <!-- Match 1 Group -->
+      <div class="date-header">WED, 12 AUG 2026</div>
+      <div class="match-card">
+        <div class="card-header">
+          <span class="match-info">1st Test &bull; Galle</span>
+          <span class="bell-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+          </span>
+        </div>
+        
+        <div class="team-row">
+          <img src="https://flagcdn.com/w40/in.png" alt="India Flag" class="flag">
+          <span class="team-name">India</span>
+        </div>
+        
+        <div class="team-row">
+          <img src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka Flag" class="flag">
+          <span class="team-name">Sri Lanka</span>
+        </div>
+        
+        <div class="match-time">10:00 am</div>
+      </div>
 
-<thead>
-<tr>
-<th>POS</th>
-<th>TEAM</th>
-<th>PLD</th>
-<th>PTS</th>
-<th>PCT</th>
-</tr>
-</thead>
+      <!-- Match 2 Group -->
+      <div class="date-header">TUE, 25 AUG 2026</div>
+      <div class="match-card">
+        <div class="card-header">
+          <span class="match-info">2nd Test &bull; Galle</span>
+          <span class="bell-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+          </span>
+        </div>
+        
+        <div class="team-row">
+          <img src="https://flagcdn.com/w40/in.png" alt="India Flag" class="flag">
+          <span class="team-name">India</span>
+        </div>
+        
+        <div class="team-row">
+          <img src="https://flagcdn.com/w40/lk.png" alt="Sri Lanka Flag" class="flag">
+          <span class="team-name">Sri Lanka</span>
+        </div>
+        
+        <div class="match-time">10:00 am</div>
+      </div>
 
-<tbody>
-
-<tr>
-<td>1</td>
-<td class="team">🇦🇺 Aus</td>
-<td>8</td>
-<td>84</td>
-<td>87.50</td>
-</tr>
-
-<tr>
-<td>2</td>
-<td class="team">🇿🇦 SA</td>
-<td>4</td>
-<td>36</td>
-<td>75.00</td>
-</tr>
-
-<tr>
-<td>3</td>
-<td class="team">🇳🇿 NZ</td>
-<td>6</td>
-<td>52</td>
-<td>72.22</td>
-</tr>
-
-<tr>
-<td>4</td>
-<td class="team">🇧🇩 BAN</td>
-<td>4</td>
-<td>28</td>
-<td>58.33</td>
-</tr>
-
-<tr>
-<td>5</td>
-<td class="team">🇮🇳 IND</td>
-<td>6</td>
-<td>36</td>
-<td>50.00</td>
-</tr>
-
-<tr>
-<td>6</td>
-<td class="team">🇱🇰 SL</td>
-<td>4</td>
-<td>20</td>
-<td>41.67</td>
-</tr>
-
-<tr>
-<td>7</td>
-<td class="team">🏴 ENG</td>
-<td>13</td>
-<td>38</td>
-<td>24.36</td>
-</tr>
-
-<tr>
-<td>8</td>
-<td class="team">🇵🇰 PAK</td>
-<td>6</td>
-<td>16</td>
-<td>22.22</td>
-</tr>
-
-<tr>
-<td>9</td>
-<td class="team">🌴 wi</td>
-<td>12</td>
-<td>30</td>
-<td>20.83</td>
-</tr>
-
-</tbody>
-
-</table>
-
-<div class="points">
-<h3>Point System</h3>
-
-✅ 12 Points for a Win<br>
-🤝 6 Points for a Tie<br>
-➖ 4 Points for a Draw<br><br>
-
-<b>Top Two Teams Progress to Final 2027.</b>
-
-</div>
-
-</div>
+    </div>
+  </div>
 
 </body>
 </html>
