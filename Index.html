@@ -1,1 +1,449 @@
-International cricket council 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Schedule</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f2f4f5;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .app-container {
+      width: 100%;
+      max-width: 480px;
+      background-color: #ffffff;
+      min-height: 100vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Teal Top Bar */
+    .top-bar {
+      background-color: #0b9e78;
+      color: white;
+      padding: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .top-bar .back-arrow {
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      background-color: #0b9e78;
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 12px;
+    }
+
+    .tab {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding-bottom: 4px;
+    }
+
+    .tab.active {
+      color: #ffffff;
+      border-bottom: 3px solid #ffffff;
+    }
+
+    /* Series Wrapper with Gap */
+    .series-section {
+      margin-bottom: 35px; /* Extra gap between different series */
+    }
+
+    .series-title-header {
+      background-color: #e8ecef;
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #0b9e78;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    /* Date Header */
+    .date-header {
+      background-color: #f2f4f5;
+      padding: 12px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #4a4a4a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Match Card */
+    .match-card {
+      background-color: #ffffff;
+      padding: 14px 16px;
+      position: relative;
+      border-bottom: 8px solid #f2f4f5; /* Separator between matches */
+    }
+
+    .match-info-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #888888;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    .bell-icon {
+      color: #b0b0b0;
+      font-size: 16px;
+    }
+
+    .teams-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .team-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #222222;
+    }
+
+    .flag-img {
+      width: 24px;
+      height: 16px;
+      object-fit: cover;
+      border-radius: 2px;
+      box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    }
+
+    .match-time {
+      color: #c88308;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="app-container">
+  
+  <!-- Header -->
+  <div class="top-bar">
+    <span class="back-arrow">&larr;</span>
+    <span>Matches</span>
+  </div>
+
+  <!-- Tabs -->
+  <div class="nav-tabs">
+    <div class="tab active">MATCHES</div>
+    <div class="tab">TABLE</div>
+    <div class="tab">STATS</div>
+    <div class="tab">SQUADS</div>
+    <div class="tab">NEWS</div>
+  </div>
+
+  <!-- ================= SERIES 1: INDIA TOUR OF SRI LANKA 2026 ================= -->
+  <div class="series-section">
+    <div class="series-title-header">India tour of Sri Lanka 2026</div>
+
+    <!-- Match 1 -->
+    <div class="date-header">TBD, 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>1st Test &bull; Galle</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/lk.png" alt="SL">
+          <span>Sri Lanka</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+      </div>
+      <div class="match-time">10:00 am</div>
+    </div>
+
+    <!-- Match 2 -->
+    <div class="date-header">TBD, 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>2nd Test &bull; Galle</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/lk.png" alt="SL">
+          <span>Sri Lanka</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+      </div>
+      <div class="match-time">10:00 am</div>
+    </div>
+  </div>
+
+  <!-- ================= SERIES 2: AFGHANISTAN VS INDIA 2026 ================= -->
+  <div class="series-section">
+    <div class="series-title-header">Afghanistan vs India in India 2026</div>
+
+    <!-- Match 1 -->
+    <div class="date-header">FRI, 11 SEP 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>1st T20I &bull; Kolkata</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/af.png" alt="Afghanistan">
+          <span>Afghanistan</span>
+        </div>
+      </div>
+      <div class="match-time">7:00 pm</div>
+    </div>
+
+    <!-- Match 2 -->
+    <div class="date-header">MON, 14 SEP 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>2nd T20I &bull; Lucknow</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/af.png" alt="Afghanistan">
+          <span>Afghanistan</span>
+        </div>
+      </div>
+      <div class="match-time">7:00 pm</div>
+    </div>
+
+    <!-- Match 3 -->
+    <div class="date-header">WED, 16 SEP 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>3rd T20I &bull; Delhi</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/af.png" alt="Afghanistan">
+          <span>Afghanistan</span>
+        </div>
+      </div>
+      <div class="match-time">7:00 pm</div>
+    </div>
+  </div>
+
+  <!-- ================= SERIES 3: WEST INDIES TOUR OF INDIA 2026 ================= -->
+  <div class="series-section">
+    <div class="series-title-header">West Indies Tour of India 2026</div>
+
+    <!-- Match 1 -->
+    <div class="date-header">FRI, 25 SEP 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>1st T20I &bull; Hyderabad</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <!-- West Indies Cricket Flag standard fallback -->
+          <img class="flag-img" src="https://flagcdn.com/w40/jm.png" alt="West Indies">
+          <span>West Indies</span>
+        </div>
+      </div>
+      <div class="match-time">7:00 pm</div>
+    </div>
+
+    <!-- Match 2 -->
+    <div class="date-header">MON, 28 SEP 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>2nd T20I &bull; Dharamshala</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/jm.png" alt="West Indies">
+          <span>West Indies</span>
+        </div>
+      </div>
+      <div class="match-time">7:00 pm</div>
+    </div>
+
+    <!-- Match 3 -->
+    <div class="date-header">WED, 30 SEP 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>3rd T20I &bull; Lucknow</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/jm.png" alt="West Indies">
+          <span>West Indies</span>
+        </div>
+      </div>
+      <div class="match-time">7:00 pm</div>
+    </div>
+
+    <!-- Match 4 -->
+    <div class="date-header">FRI, 02 OCT 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>4th T20I &bull; Pune</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/jm.png" alt="West Indies">
+          <span>West Indies</span>
+        </div>
+      </div>
+      <div class="match-time">7:00 pm</div>
+    </div>
+
+    <!-- Match 5 -->
+    <div class="date-header">SUN, 04 OCT 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>5th T20I &bull; Ahmedabad</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/jm.png" alt="West Indies">
+          <span>West Indies</span>
+        </div>
+      </div>
+      <div class="match-time">7:00 pm</div>
+    </div>
+
+    <!-- ODI 1 -->
+    <div class="date-header">WED, 07 OCT 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>1st ODI &bull; Mumbai</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/jm.png" alt="West Indies">
+          <span>West Indies</span>
+        </div>
+      </div>
+      <div class="match-time">1:30 pm</div>
+    </div>
+
+    <!-- ODI 2 -->
+    <div class="date-header">SAT, 10 OCT 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>2nd ODI &bull; Chennai</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/jm.png" alt="West Indies">
+          <span>West Indies</span>
+        </div>
+      </div>
+      <div class="match-time">1:30 pm</div>
+    </div>
+
+    <!-- ODI 3 -->
+    <div class="date-header">WED, 14 OCT 2026</div>
+    <div class="match-card">
+      <div class="match-info-top">
+        <span>3rd ODI &bull; Kolkata</span>
+        <span class="bell-icon">&#128276;</span>
+      </div>
+      <div class="teams-container">
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/in.png" alt="India">
+          <span>India</span>
+        </div>
+        <div class="team-row">
+          <img class="flag-img" src="https://flagcdn.com/w40/jm.png" alt="West Indies">
+          <span>West Indies</span>
+        </div>
+      </div>
+      <div class="match-time">1:30 pm</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
